@@ -14,14 +14,14 @@ for i in \
 	"SpaccCraft.Run" \
 	"SpaccCraftAPI"
 do
-	git clone ""$Git"/SpaccInc/SpaccCraft/"$i""
+	git clone --depth 1 ""$Git"/SpaccInc/SpaccCraft/"$i""
 done
 
 for i in \
 	"spaccinc.gitlab.io" \
 	"Sysadmin"
 do
-	git clone ""$Git"/SpaccInc/"$i""
+	git clone --depth 1 ""$Git"/SpaccInc/"$i""
 done
 
 cd ..

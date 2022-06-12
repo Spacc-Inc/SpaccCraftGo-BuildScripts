@@ -18,4 +18,4 @@ wget \
 	"$Website"
 
 cd "$(echo "$Website" | cut -f 3 -d /)"
-rm -rf wp-admin wp-login*
+rm -rf wp-admin wp-login* favicon.ico

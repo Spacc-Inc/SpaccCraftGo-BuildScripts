@@ -1,12 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-# Extract original ISO and squashfs for hacking
+# Extract contents from original ISO for hacking
 
 mkdir -p Build
+
 cd Build
-
-7z x "../"$1""
+7z x "../$1"
 rm -rf "[BOOT]"
-
-unsquashfs puppy_fossapup64_9.5.sfs
-rm puppy_fossapup64_9.5.sfs
